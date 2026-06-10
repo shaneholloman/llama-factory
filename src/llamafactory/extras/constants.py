@@ -886,6 +886,9 @@ register_model_group(
         "Gemma-4-E4B-Thinking": {
             DownloadSource.DEFAULT: "google/gemma-4-E4B-it",
         },
+        "Gemma-4-12B-Thinking": {
+            DownloadSource.DEFAULT: "google/gemma-4-12B-it",
+        },
     },
     template="gemma4n",
     multimodal=True,
@@ -1909,6 +1912,17 @@ register_model_group(
         },
     },
     template="cpm4",
+)
+
+
+register_model_group(
+    models={
+        "MiniCPM5-1B-Chat": {
+            DownloadSource.DEFAULT: "openbmb/MiniCPM5-1B",
+            DownloadSource.MODELSCOPE: "OpenBMB/MiniCPM5-1B",
+        },
+    },
+    template="empty",
 )
 
 
